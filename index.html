@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        #div1,
+        #div2 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div3,
+        #div4 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div5,
+        #div6 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div7,
+        #div8 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div9,
+        #div10 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div11,
+        #div12{
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #div15,
+        #div16 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Drag and Drop</h2>
+    <p>Arraste as imagens para o outro lado. </p>
+
+    <!---Primeira Linha-->
+    <table>
+        <tr>
+            <td>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="50">🤑</p>
+                </div>
+
+            </td>
+
+            <td>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p draggable="true" ondragstart="drag(event)" id="drag" width="88" height="50">
+                choro</div>
+
+                </div>
+            </td>
+        </tr>
+</table>
+
+
+<table>
+    <tr>
+        <td>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="50">😴</p>
+            </div>
+
+        </td>
+
+        <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag" width="88" height="50">
+            vomito</div>
+
+            </div>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="50">😭</p>
+            </div>
+
+        </td>
+
+        <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag" width="88" height="50">
+            dormindo</div>
+
+            </div>
+        </td>
+    </tr>
+</table> 
+
+<table>
+    <tr>
+        <td>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag4" width="88" height="50">😴</p>
+            </div>
+
+        </td>
+
+        <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag" width="88" height="50">
+            top</div>
+
+            </div>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="50">🤩</p>
+            </div>
+
+        </td>
+
+        <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag" width="88" height="50">
+            apaixonado</div>
+
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+
+<table>
+    <tr>
+        <td>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="50">😎</p>
+            </div>
+
+        </td>
+
+        <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag" width="88" height="50">
+            dinheiro</div>
+
+            </div>
+        </td>
+    </tr>
+</table>
+
+</html>
